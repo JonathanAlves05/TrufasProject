@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dois Amores Doceria - O sabor do amor em cada pedaço</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Definindo as fontes personalizadas */
+        .font-title {
+            font-family: 'Dancing Script', cursive;
+        }
+        .font-body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    
+    <script>
+        // Configuração de cores personalizadas para o Tailwind
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-pink': '#FADADD', // Rosa claro
+                        'brand-gold': '#D4AF37', // Dourado
+                        'brand-brown': '#5C4033', // Marrom chocolate
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body bg-white text-brand-brown">
+
+    <!-- HEADER - Cabeçalho com o logo -->
+    <header class="py-4 px-6 md:px-12 shadow-md sticky top-0 bg-white z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="font-title text-3xl text-brand-brown">Dois Amores Doceria</a>
+            <nav class="hidden md:flex space-x-6">
+                 <a href="#produtos" class="hover:text-brand-gold transition-colors">Produtos</a>
+                 <a href="#sobre" class="hover:text-brand-gold transition-colors">Sobre Nós</a>
+                 <a href="#encomendar" class="hover:text-brand-gold transition-colors">Como Encomendar</a>
+            </nav>
+        </div>
+    </header>
+    </header>
+
+    <!-- SEÇÃO 1: BANNER PRINCIPAL -->
+    <section class="relative h-[60vh] md:h-[80vh] bg-cover bg-center bg-brand-pink">
+        <div class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-white text-center p-4">
+            <h1 class="font-title text-5xl md:text-7xl drop-shadow-lg">O sabor do amor em cada pedaço</h1>
+            <p class="mt-4 max-w-lg text-lg">As mais deliciosas trufas e bolos de pote, feitos com carinho para adoçar o seu dia.</p>
+            <a href="https://wa.me/55SEUNUMERO?text=Olá!%20Gostaria%20de%20fazer%20uma%20encomenda." target="_blank" class="mt-8 bg-brand-gold text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-600 transition duration-300 transform hover:scale-105">
+                Faça sua Encomenda
+            </a>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: NOSSOS PRODUTOS -->
+    <section id="produtos" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="font-title text-4xl md:text-5xl text-center text-brand-brown mb-12">Nossas Delícias</h2>
+
+            <!-- Trufas -->
+            <h3 class="text-2xl font-bold text-center mb-8">Trufas Artesanais - <span class="text-brand-gold">R$ 4,00</span></h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 md:gap-8">
+                <!-- Card de Produto - Trufa -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/trufas.jpg" alt="Trufa de Prestígio" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Prestígio</h4>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/trufas.jpg" alt="Trufa de Brigadeiro" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Brigadeiro</h4>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/trufas.jpg" alt="Trufa de Ninho" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Ninho</h4>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/trufas.jpg" alt="Trufa de Ninho com Nutella" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Ninho c/ Nutella</h4>
+                    </div>
+                </div>
+                 <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/trufas.jpg" alt="Trufa de Maracujá" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Maracujá</h4>
+                    </div>
+                </div>
+                <!-- Adicione os outros sabores de trufa aqui -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/trufas.jpg" alt="Trufa de Limão" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Limão</h4>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/trufas.jpg" alt="Trufa de Paçoca" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Paçoca</h4>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/trufas.jpg" alt="Trufa Surpresa de Uva" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Surpresa de Uva</h4>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/trufas.jpg" alt="Trufa do Amor" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Trufa do Amor</h4>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/trufas.jpg" alt="Trufa de Oreo" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Oreo</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bolos de Pote -->
+            <h3 class="text-2xl font-bold text-center mt-16 mb-8">Bolos de Pote</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                <!-- Card de Produto - Bolo de Pote -->
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/brigadeiro.jpg" alt="Bolo de Brigadeiro" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Brigadeiro</h4>
+                        <p class="text-gray-600 font-bold">R$ 10,00</p>
+                    </div>
+                </div>
+                
+                 <!-- Adicione os outros sabores de bolo de pote aqui -->
+                 <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/bolo.jpg" alt="Bolo de Prestígio" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Prestígio</h4>
+                        <p class="text-gray-600 font-bold">R$ 10,00</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/bolo.jpg" alt="Bolo de Ninho" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Ninho</h4>
+                        <p class="text-gray-600 font-bold">R$ 10,00</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/bolo.jpg" alt="Bolo de Maracujá" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Maracujá</h4>
+                        <p class="text-gray-600 font-bold">R$ 10,00</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/bolo.jpg" alt="Bolo de Limão" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Limão</h4>
+                        <p class="text-gray-600 font-bold">R$ 10,00</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/nutella.jpg" alt="Bolo de Ninho com Nutella" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Ninho c/ Nutella</h4>
+                        <p class="text-brand-gold font-bold">R$ 12,00</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/bolo.jpg" alt="Bolo de Ninho com Morango" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Ninho c/ Morango</h4>
+                        <p class="text-brand-gold font-bold">R$ 12,00</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/bolo.jpg" alt="Bolo Ferrero Rocher" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Ferrero Rocher</h4>
+                        <p class="text-brand-gold font-bold">R$ 12,00</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="img/bolo.jpg" alt="Bolo Surpresa de Uva" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-semibold">Surpresa de Uva</h4>
+                        <p class="text-brand-gold font-bold">R$ 12,00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: SOBRE NÓS -->
+    <section id="sobre" class="py-16 md:py-24">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="img/casal.jpg" alt="Os donos da Dois Amores Doceria" class="rounded-lg shadow-xl w-full">
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="font-title text-4xl md:text-5xl text-brand-brown mb-4">Feito por nós, para você</h2>
+                <p class="text-lg leading-relaxed">
+                    A Dois Amores Doceria nasceu da nossa paixão por criar doces que celebram os momentos especiais. Acreditamos que um bom doce tem o poder de transformar o dia, e é por isso que cada trufa e bolo de pote é feito com os melhores ingredientes e, claro, muito carinho. Da nossa cozinha para a sua casa, esperamos levar mais doçura e afeto para a sua vida.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: COMO ENCOMENDAR -->
+    <section id="encomendar" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-title text-4xl md:text-5xl text-brand-brown mb-12">Peça Agora em 3 Passos!</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Passo 1 -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-brand-pink rounded-full w-24 h-24 flex items-center justify-center mb-4">
+                        <span class="text-4xl">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Escolha suas delícias</h3>
+                    <p>Navegue pelo nosso cardápio e escolha seus doces favoritos.</p>
+                </div>
+                <!-- Passo 2 -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-brand-pink rounded-full w-24 h-24 flex items-center justify-center mb-4">
+                       <span class="text-4xl">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Chame no WhatsApp</h3>
+                    <p>Clique no botão e envie sua lista de desejos diretamente para nós.</p>
+                </div>
+                <!-- Passo 3 -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-brand-pink rounded-full w-24 h-24 flex items-center justify-center mb-4">
+                        <span class="text-4xl">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Combine a Entrega</h3>
+                    <p>Finalizaremos seu pedido e combinaremos o melhor dia e horário para você.</p>
+                </div>
+            </div>
+            <a href="https://wa.me/55SEUNUMERO?text=Olá!%20Gostaria%20de%20fazer%20uma%20encomenda." target="_blank" class="mt-12 inline-block bg-brand-gold text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-600 transition duration-300 transform hover:scale-105">
+                Encomendar via WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 5: RODAPÉ -->
+    <footer class="bg-brand-brown text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="font-title text-3xl mb-4">Dois Amores Doceria</h3>
+            <p class="mb-4">Entregas em São Paulo/São Paulo</p>
+            <div class="flex justify-center items-center space-x-4">
+                <a href="https://instagram.com/SEUUSUARIO" target="_blank" class="hover:opacity-75 transition-opacity">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 012.153 2.153c.247.636.398 1.363.444 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.046 1.064-.198 1.791-.444 2.427a4.902 4.902 0 01-2.153 2.153c-.636.247-1.363.398-2.427.444-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.046-1.791-.198-2.427-.444a4.902 4.902 0 01-2.153-2.153c-.247-.636-.398-1.363-.444-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.046-1.064.198-1.791.444-2.427a4.902 4.902 0 012.153-2.153c.636-.247 1.363-.398 2.427-.444C9.531 2.013 9.885 2 12.315 2zM12 7.177a4.823 4.823 0 100 9.646 4.823 4.823 0 000-9.646zm0 7.917a3.094 3.094 0 110-6.188 3.094 3.094 0 010 6.188zM16.832 6.188a1.21 1.21 0 100 2.419 1.21 1.21 0 000-2.419z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="https://wa.me/55SEUNUMERO" target="_blank" class="hover:opacity-75 transition-opacity">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M19.333 4.667a9.333 9.333 0 00-13.2 13.2l-1.466 4.4L9.067 21A9.333 9.333 0 0019.333 4.667zM12 20.333a8 8 0 110-16 8 8 0 010 16z"/><path d="M15.467 13.8a.667.667 0 00-.533-.333h-1.2a.667.667 0 00-.667.667v.533c0 .333-.267.6-.6.6-.333 0-.6-.267-.6-.6v-2.133a.667.667 0 00-.667-.667h-.667a.667.667 0 00-.667.667v2.133c0 .333-.267.6-.6.6-.333 0-.6-.267-.6-.6V11.8a.667.667 0 00-.667-.667h-.667a.667.667 0 00-.667.667v2.133a2 2 0 002 2h2.667a.667.667 0 00.667-.667v-1.2a.667.667 0 00.133-.4z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="mt-8 text-sm text-gray-400">&copy; 2025 Dois Amores Doceria. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
